@@ -15,9 +15,10 @@ import android.text.style.StyleSpan
 import android.util.AttributeSet
 import android.view.View
 import android.widget.TextView
+import androidx.emoji.widget.EmojiAppCompatTextView
 import java.lang.reflect.Field
 
-class AutoLinkTextView(context: Context, attrs: AttributeSet? = null) : TextView(context, attrs) {
+class AutoLinkTextView(context: Context, attrs: AttributeSet? = null) : EmojiAppCompatTextView(context, attrs) {
 
     companion object {
         internal val TAG = AutoLinkTextView::class.java.simpleName
